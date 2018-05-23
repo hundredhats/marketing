@@ -51,12 +51,20 @@ code {
 
 
 header {
-  background-image: url('../img/test.png');
+  /* background-image: url('../img/test.png'); */
   background-size: 200px;
   height: 100%;
 }
 
-header h1 {
+nav {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+nav h1 {
   font-size: 1.25em;
   margin: 0;
   border: 4px solid #fa670f;
@@ -65,21 +73,12 @@ header h1 {
   background-color: #ffffff;
 }
 
-header h1:hover {
+nav h1:hover {
   border: 4px solid #ffbb00;
-  background-color: #b5875d;
 }
 
 .logo-link {
   color: #fa670f;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
-  padding: 20px;
-  position: fixed;
-  background-color: rgba(51, 51, 51, 0.3);
 }
 
 nav ul {
@@ -96,13 +95,101 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 0 10px;
+  font-weight: 700;
 }
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+}
+
+.blurb {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blurb-scroll {
+  position: relative;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.blurb-scroll .fa-angle-down {
+  font-size: 2em;
 }
 
 main {
   height: 100%;
+}
+
+section {
+  margin: 50px 0;
+  min-height: 50%;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-item {
+  display: inline-block;
+  max-width: 300px;
+}
+
+.services .icon {
+  font-size: 3em;
+  text-align: center;
+}
+
+.services .heading {
+  text-align: center;
+}
+
+.work {
+
+}
+
+.work .heading {
+  text-align: center;
+}
+
+.contact {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input, textarea {
+  font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input:focus, textarea:focus {
+  outline-color: #ffbb00;
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+input[type=submit] {
+  font-size: 1em;
+  border: 2px solid #fa670f;
+  background-color: #fa670f;
+  color: #fff;
+  padding: 15px 30px;
+  min-width: 150px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffbb00;
+  border: 2px solid #ffbb00;
 }
