@@ -120,18 +120,14 @@ nav a {
   font-size: 2em;
 }
 
-main {
-  height: 100%;
-}
-
 section {
   padding: 50px;
-  min-height: 70%;
 }
 
 .services {
   display: flex;
   justify-content: space-around;
+  min-height: 600px;
 }
 
 .service-item {
@@ -215,4 +211,33 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #ffbb00;
   border: 2px solid #ffbb00;
+}
+
+footer {
+  background-color: #333333;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+footer ul {
+  margin: 0;
+  text-align: right;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+footer li {
+  display: inline-block;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
 }
