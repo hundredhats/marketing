@@ -127,12 +127,14 @@ section {
 .services {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   min-height: 600px;
 }
 
 .service-item {
   display: inline-block;
   max-width: 300px;
+  margin: 20px;
 }
 
 .services .icon {
