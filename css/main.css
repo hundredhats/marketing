@@ -121,7 +121,6 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-height: 600px;
   max-width: 1400px;
   margin: auto;
 }
