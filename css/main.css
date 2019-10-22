@@ -28,6 +28,10 @@ a:hover {
   color: #ffbb00;
 }
 
+p {
+  line-height: 1.75;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
